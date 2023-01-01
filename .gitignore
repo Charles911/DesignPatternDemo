@@ -3,3 +3,5 @@ Singleton/obj/*
 .vscode/*
 SimpleFactory/obj/*
 SimpleFactory/bin/*
+Factory/obj/*
+Factory/bin/*

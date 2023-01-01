@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Singleton", "Singleton\Sing
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleFactory", "SimpleFactory\SimpleFactory.csproj", "{C420E508-AE5E-4B74-8194-98602E61AD56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Factory", "Factory\Factory.csproj", "{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -44,5 +46,17 @@ Global
 		{C420E508-AE5E-4B74-8194-98602E61AD56}.Release|x64.Build.0 = Release|Any CPU
 		{C420E508-AE5E-4B74-8194-98602E61AD56}.Release|x86.ActiveCfg = Release|Any CPU
 		{C420E508-AE5E-4B74-8194-98602E61AD56}.Release|x86.Build.0 = Release|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Debug|x64.Build.0 = Debug|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Debug|x86.Build.0 = Debug|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Release|x64.ActiveCfg = Release|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Release|x64.Build.0 = Release|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Release|x86.ActiveCfg = Release|Any CPU
+		{7973B0EC-ADD8-4FEC-A4D6-4571104033E0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
