@@ -3,7 +3,7 @@ namespace Adapter;
 /// <summary>
 /// 两个孔的插头，源角色——需要适配的类
 /// /// </summary>
-public abstract class TwoHole
+public class TwoHole
 {
     public void SpecificRequest()
     {

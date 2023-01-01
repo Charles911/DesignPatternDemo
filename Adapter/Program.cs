@@ -15,7 +15,12 @@ class Program
     /// </summary>
     static void Main(string[] args)
     {
+        //类适配模式
         IThreeHole threeHole = new PowerAdapter();
         threeHole.Request();
+
+        //对象适配模式
+        ThreeHole threeHole1 = new PowerAdapter2();
+        threeHole1.Request();
     }
 }
