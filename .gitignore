@@ -3,12 +3,14 @@ Singleton/bin/*
 SimpleFactory/bin/*
 Factory/bin/*
 AbstractFactory/bin/*
+Adapter/bin/*
 
 #obj
 Singleton/obj/*
 SimpleFactory/obj/*
 Factory/obj/*
 AbstractFactory/obj/*
+Adapter/obj/*
 
 #other
 .vscode/*
