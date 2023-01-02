@@ -2,13 +2,7 @@ namespace AbstractFactory;
 
 public class NanjingFactory : AbstractFactory
 {
-    public override Yabo CreateYabo()
-    {
-        return new NanjingYabo();
-    }
+    public override Yabo CreateYabo() => new NanjingYabo();
 
-    public override Yajia CreateYajia()
-    {
-        return new NanjingYajia();
-    }
+    public override Yajia CreateYajia() => new NanjingYajia();
 }

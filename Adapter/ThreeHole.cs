@@ -9,7 +9,8 @@ public class ThreeHole
     /// <summary>
     /// 客户端需要的方法
     /// </summary>
-    public virtual void Request(){
+    public virtual void Request()
+    {
         //可以将一般实现放到这里
     }
 }

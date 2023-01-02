@@ -2,8 +2,5 @@ namespace Factory;
 
 public class ShreddedPorkWithPotatoesFactory : Kitchen
 {
-    public override Food Create()
-    {
-        return new ShreddedPorkWithPotatoes();
-    }
+    public override Food Create() => new ShreddedPorkWithPotatoes();
 }

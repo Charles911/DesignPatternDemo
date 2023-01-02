@@ -1,9 +1,6 @@
 namespace AbstractFactory;
 
-public class ShanghaiYabo:Yabo
+public class ShanghaiYabo : Yabo
 {
-    public override void Show()
-    {
-        Console.WriteLine("上海鸭脖");
-    }
+    public override void Show() => Console.WriteLine("上海鸭脖");
 }

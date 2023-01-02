@@ -4,6 +4,7 @@ SimpleFactory/bin/*
 Factory/bin/*
 AbstractFactory/bin/*
 Adapter/bin/*
+Prototype/bin/*
 
 #obj
 Singleton/obj/*
@@ -11,6 +12,7 @@ SimpleFactory/obj/*
 Factory/obj/*
 AbstractFactory/obj/*
 Adapter/obj/*
+Prototype/obj/*
 
 #other
 .vscode/*

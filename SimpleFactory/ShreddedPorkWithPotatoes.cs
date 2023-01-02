@@ -2,8 +2,5 @@ namespace SimpleFactory;
 
 public class ShreddedPorkWithPotatoes : Food
 {
-    public override void Show()
-    {
-        Console.WriteLine("土豆肉丝");
-    }
+    public override void Show() => Console.WriteLine("土豆肉丝");
 }

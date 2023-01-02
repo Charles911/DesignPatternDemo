@@ -2,8 +2,5 @@ namespace Factory;
 
 public class MincedMeatEggplantFactory : Kitchen
 {
-    public override Food Create()
-    {
-        return new MincedMeatEggplant();
-    }
+    public override Food Create() => new MincedMeatEggplant();
 }
