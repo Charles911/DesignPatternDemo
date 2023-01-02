@@ -6,6 +6,7 @@ AbstractFactory/bin/*
 Adapter/bin/*
 Prototype/bin/*
 Builder/bin/*
+Bridge/bin/*
 
 #obj
 Singleton/obj/*
@@ -15,6 +16,7 @@ AbstractFactory/obj/*
 Adapter/obj/*
 Prototype/obj/*
 Builder/obj/*
+Bridge/obj/*
 
 #other
 .vscode/*

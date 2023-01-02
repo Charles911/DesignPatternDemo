@@ -1,5 +1,3 @@
-using System;
-
 namespace AbstractFactory;
 
 public class NanjingYabo : Yabo
