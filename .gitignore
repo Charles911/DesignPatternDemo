@@ -8,6 +8,7 @@ Prototype/bin/*
 Builder/bin/*
 Bridge/bin/*
 Proxy/bin/*
+Flyweight/bin/*
 
 #obj
 Singleton/obj/*
@@ -19,6 +20,7 @@ Prototype/obj/*
 Builder/obj/*
 Bridge/obj/*
 Proxy/obj/*
+Flyweight/obj/*
 
 #other
 .vscode/*
