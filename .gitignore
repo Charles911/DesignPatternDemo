@@ -9,6 +9,7 @@ Builder/bin/*
 Bridge/bin/*
 Proxy/bin/*
 Flyweight/bin/*
+Facade/bin/*
 
 #obj
 Singleton/obj/*
@@ -21,6 +22,7 @@ Builder/obj/*
 Bridge/obj/*
 Proxy/obj/*
 Flyweight/obj/*
+Facade/obj/*
 
 #other
 .vscode/*
