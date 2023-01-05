@@ -15,6 +15,7 @@ Composite/bin/*
 Decorator/bin/*
 Command/bin/*
 Iterator/bin/*
+Mediator/bin/*
 
 #obj
 Singleton/obj/*
@@ -33,6 +34,7 @@ Composite/obj/*
 Decorator/obj/*
 Command/obj/*
 Iterator/obj/*
+Mediator/obj/*
 
 #other
 .vscode/*
