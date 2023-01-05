@@ -13,6 +13,7 @@ Facade/bin/*
 Template/bin/*
 Composite/bin/*
 Decorator/bin/*
+Command/bin/*
 
 #obj
 Singleton/obj/*
@@ -29,6 +30,7 @@ Facade/obj/*
 Template/obj/*
 Composite/obj/*
 Decorator/obj/*
+Command/obj/*
 
 #other
 .vscode/*
