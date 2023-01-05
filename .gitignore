@@ -12,6 +12,7 @@ Flyweight/bin/*
 Facade/bin/*
 Template/bin/*
 Composite/bin/*
+Decorator/bin/*
 
 #obj
 Singleton/obj/*
@@ -27,6 +28,7 @@ Flyweight/obj/*
 Facade/obj/*
 Template/obj/*
 Composite/obj/*
+Decorator/obj/*
 
 #other
 .vscode/*
