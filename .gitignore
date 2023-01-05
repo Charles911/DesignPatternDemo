@@ -11,6 +11,7 @@ Proxy/bin/*
 Flyweight/bin/*
 Facade/bin/*
 Template/bin/*
+Composite/bin/*
 
 #obj
 Singleton/obj/*
@@ -25,6 +26,7 @@ Proxy/obj/*
 Flyweight/obj/*
 Facade/obj/*
 Template/obj/*
+Composite/obj/*
 
 #other
 .vscode/*
