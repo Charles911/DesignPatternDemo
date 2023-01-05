@@ -10,6 +10,7 @@ Bridge/bin/*
 Proxy/bin/*
 Flyweight/bin/*
 Facade/bin/*
+Template/bin/*
 
 #obj
 Singleton/obj/*
@@ -23,6 +24,7 @@ Bridge/obj/*
 Proxy/obj/*
 Flyweight/obj/*
 Facade/obj/*
+Template/obj/*
 
 #other
 .vscode/*
