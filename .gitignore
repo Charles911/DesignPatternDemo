@@ -14,6 +14,7 @@ Template/bin/*
 Composite/bin/*
 Decorator/bin/*
 Command/bin/*
+Iterator/bin/*
 
 #obj
 Singleton/obj/*
@@ -31,6 +32,7 @@ Template/obj/*
 Composite/obj/*
 Decorator/obj/*
 Command/obj/*
+Iterator/obj/*
 
 #other
 .vscode/*
