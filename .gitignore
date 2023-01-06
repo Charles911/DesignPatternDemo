@@ -16,6 +16,7 @@ Decorator/bin/*
 Command/bin/*
 Iterator/bin/*
 Mediator/bin/*
+State/bin/*
 
 #obj
 Singleton/obj/*
@@ -35,6 +36,7 @@ Decorator/obj/*
 Command/obj/*
 Iterator/obj/*
 Mediator/obj/*
+State/obj/*
 
 #other
 .vscode/*

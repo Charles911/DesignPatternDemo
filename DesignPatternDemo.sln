@@ -37,6 +37,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterator", "Iterator\Iterat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mediator", "Mediator\Mediator.csproj", "{AC8CB514-E252-4934-BC45-884B2AF67240}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "State", "State\State.csproj", "{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -254,5 +256,17 @@ Global
 		{AC8CB514-E252-4934-BC45-884B2AF67240}.Release|x64.Build.0 = Release|Any CPU
 		{AC8CB514-E252-4934-BC45-884B2AF67240}.Release|x86.ActiveCfg = Release|Any CPU
 		{AC8CB514-E252-4934-BC45-884B2AF67240}.Release|x86.Build.0 = Release|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Debug|x64.Build.0 = Debug|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Debug|x86.Build.0 = Debug|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Release|x64.ActiveCfg = Release|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Release|x64.Build.0 = Release|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Release|x86.ActiveCfg = Release|Any CPU
+		{940767C9-1F52-4032-A1C8-DAE3C8D0B5D0}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
