@@ -17,6 +17,7 @@ Command/bin/*
 Iterator/bin/*
 Mediator/bin/*
 State/bin/*
+ChainOfResponsibility/bin/*
 
 #obj
 Singleton/obj/*
@@ -37,6 +38,7 @@ Command/obj/*
 Iterator/obj/*
 Mediator/obj/*
 State/obj/*
+ChainOfResponsibility/obj/*
 
 #other
 .vscode/*
