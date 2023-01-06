@@ -18,6 +18,7 @@ Iterator/bin/*
 Mediator/bin/*
 State/bin/*
 ChainOfResponsibility/bin/*
+Vistor/bin/*
 
 #obj
 Singleton/obj/*
@@ -39,6 +40,7 @@ Iterator/obj/*
 Mediator/obj/*
 State/obj/*
 ChainOfResponsibility/obj/*
+Vistor/obj/*
 
 #other
 .vscode/*
