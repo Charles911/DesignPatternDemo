@@ -21,6 +21,7 @@ ChainOfResponsibility/bin/*
 Vistor/bin/*
 Memento/bin/*
 Stragety/bin/*
+Observer/bin/*
 
 #obj
 Singleton/obj/*
@@ -45,6 +46,7 @@ ChainOfResponsibility/obj/*
 Vistor/obj/*
 Memento/obj/*
 Stragety/obj/*
+Observer/obj/*
 
 #other
 .vscode/*

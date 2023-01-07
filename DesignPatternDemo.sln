@@ -47,6 +47,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Memento", "Memento\Memento.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stragety", "Stragety\Stragety.csproj", "{A9191049-45D1-4750-B3A5-02B26BC12277}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Observer", "Observer\Observer.csproj", "{DB1A785E-D0B7-4BF2-970A-048746C220D2}"
+EndProject
 Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -324,5 +326,17 @@ Global
 		{A9191049-45D1-4750-B3A5-02B26BC12277}.Release|x64.Build.0 = Release|Any CPU
 		{A9191049-45D1-4750-B3A5-02B26BC12277}.Release|x86.ActiveCfg = Release|Any CPU
 		{A9191049-45D1-4750-B3A5-02B26BC12277}.Release|x86.Build.0 = Release|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Debug|x64.Build.0 = Debug|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Debug|x86.Build.0 = Debug|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Release|x64.ActiveCfg = Release|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Release|x64.Build.0 = Release|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Release|x86.ActiveCfg = Release|Any CPU
+		{DB1A785E-D0B7-4BF2-970A-048746C220D2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
