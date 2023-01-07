@@ -19,6 +19,7 @@ Mediator/bin/*
 State/bin/*
 ChainOfResponsibility/bin/*
 Vistor/bin/*
+Memento/bin/*
 
 #obj
 Singleton/obj/*
@@ -41,6 +42,7 @@ Mediator/obj/*
 State/obj/*
 ChainOfResponsibility/obj/*
 Vistor/obj/*
+Memento/obj/*
 
 #other
 .vscode/*
