@@ -20,6 +20,7 @@ State/bin/*
 ChainOfResponsibility/bin/*
 Vistor/bin/*
 Memento/bin/*
+Stragety/bin/*
 
 #obj
 Singleton/obj/*
@@ -43,6 +44,7 @@ State/obj/*
 ChainOfResponsibility/obj/*
 Vistor/obj/*
 Memento/obj/*
+Stragety/obj/*
 
 #other
 .vscode/*
