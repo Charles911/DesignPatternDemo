@@ -50,3 +50,4 @@ Observer/obj/*
 
 #other
 .vscode/*
+.vs/*
