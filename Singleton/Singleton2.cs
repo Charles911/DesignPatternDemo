@@ -12,7 +12,7 @@ public sealed class Singleton2
     Singleton2() { }
     static Singleton2? instance;
     //同步锁
-    static readonly object syncObj = new object();
+    static readonly object syncObj = new();
     public static Singleton2 Instance
     {
         get
@@ -21,10 +21,7 @@ public sealed class Singleton2
             lock (syncObj)
             {
                 //当其他线程发现对象被锁定了，只能等待
-                if (instance == null)
-                {
-                    instance = new Singleton2();
-                }
+                instance ??= new Singleton2();
             }
             return instance;
         }
