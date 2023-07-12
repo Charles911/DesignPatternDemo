@@ -9,5 +9,5 @@ namespace Singleton;
 public sealed class Singleton6
 {
     Singleton6() { }
-    public static readonly Singleton6 Instance = new Singleton6();
+    public static readonly Singleton6 Instance = new();
 }

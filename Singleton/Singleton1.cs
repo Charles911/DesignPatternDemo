@@ -18,10 +18,7 @@ public sealed class Singleton1 //该类不能被继承
     {
         get
         {
-            if (instance == null)
-            {
-                instance = new Singleton1();
-            }
+            instance ??= new Singleton1();
             return instance;
         }
     }

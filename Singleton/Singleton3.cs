@@ -11,7 +11,7 @@ public sealed class Singleton3
 {
     Singleton3() { }
     static Singleton3? instance;
-    static readonly object syncObj = new object();
+    static readonly object syncObj = new();
     public static Singleton3 Instance
     {
         get
@@ -21,10 +21,7 @@ public sealed class Singleton3
             {
                 lock (syncObj)
                 {
-                    if (instance == null)
-                    {
-                        instance = new Singleton3();
-                    }
+                    instance ??= new Singleton3();
                 }
             }
             return instance;
