@@ -7,7 +7,7 @@ public class ConcreteList : IListCollection
 {
     private readonly int[] collection;
 
-    public ConcreteList() => collection = new int[] { 2, 4, 6, 8 };
+    public ConcreteList() => collection = [2, 4, 6, 8];
 
     public Iterator GetIterator() => new ConcreteIterator(this);
 
