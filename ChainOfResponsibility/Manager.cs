@@ -3,10 +3,8 @@ namespace ChainOfResponsibility;
 /// <summary>
 /// 经理
 /// </summary>
-public class Manager : Approver
+public class Manager(string name) : Approver(name)
 {
-    public Manager(string name) : base(name) { }
-
     public override void ProcessRequest(PurchaseRequest request)
     {
         if (request.Amount < 10000.0)

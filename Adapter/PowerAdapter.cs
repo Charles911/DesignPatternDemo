@@ -10,5 +10,5 @@ public class PowerAdapter : TwoHole, IThreeHole
     /// <summary>
     /// 实现三个孔插头接口方法
     /// </summary>
-    public void Request() => this.SpecificRequest(); ////调用两个孔插头方法
+    public void Request() => SpecificRequest(); 
 }

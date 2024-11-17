@@ -3,10 +3,8 @@ namespace ChainOfResponsibility;
 /// <summary>
 /// 总经理
 /// </summary>
-public class President : Approver
+public class President(string name) : Approver(name)
 {
-    public President(string name) : base(name) { }
-
     public override void ProcessRequest(PurchaseRequest request)
     {
         if (request.Amount < 100000.0)

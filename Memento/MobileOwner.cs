@@ -3,11 +3,9 @@ namespace Memento;
 /// <summary>
 /// 发起人
 /// </summary>
-public class MobileOwner
+public class MobileOwner(List<ContactPerson> persons)
 {
-    public List<ContactPerson> ContactPersons { get; set; }
-
-    public MobileOwner(List<ContactPerson> persons) => ContactPersons = persons;
+    public List<ContactPerson> ContactPersons { get; set; } = persons;
 
     /// <summary>
     /// 创建备忘录，将要保存的联系人列表导入到备忘录中

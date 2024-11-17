@@ -3,10 +3,8 @@ namespace Decorator;
 /// <summary>
 /// 手机挂件
 /// </summary>
-public class Accessories : Decorator
+public class Accessories(Phone p) : Decorator(p)
 {
-    public Accessories(Phone p) : base(p) { }
-
     public override void Print()
     {
         base.Print();

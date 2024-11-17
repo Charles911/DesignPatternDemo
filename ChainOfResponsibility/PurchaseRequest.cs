@@ -3,21 +3,16 @@ namespace ChainOfResponsibility;
 /// <summary>
 /// 采购请求
 /// </summary>
-public class PurchaseRequest
+public class PurchaseRequest(double amount, string productName)
 {
-    public PurchaseRequest(double amount, string productName)
-    {
-        Amount = amount;
-        ProductName = productName;
-    }
 
     /// <summary>
     /// 金额
     /// </summary>
-    public double Amount{get; set;}
+    public double Amount { get; set; } = amount;
 
     /// <summary>
     /// 产品
     /// </summary>
-    public string ProductName{get; set;}
+    public string ProductName { get; set; } = productName;
 }

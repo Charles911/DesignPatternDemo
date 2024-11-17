@@ -3,10 +3,8 @@ namespace Decorator;
 /// <summary>
 /// 贴膜，即具体装饰者
 /// </summary>
-public class Sticker : Decorator
+public class Sticker(Phone p) : Decorator(p)
 {
-    public Sticker(Phone p) : base(p) { }
-
     public override void Print()
     {
         base.Print();

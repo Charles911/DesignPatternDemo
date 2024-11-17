@@ -1,10 +1,8 @@
 namespace Stragety;
 
-public class InterestOperation
+public class InterestOperation(ITaxStragety taxStragety)
 {
-    private readonly ITaxStragety stragety;
-
-    public InterestOperation(ITaxStragety taxStragety) => stragety = taxStragety;
+    private readonly ITaxStragety stragety = taxStragety;
 
     public double GetTax(double income) => stragety.CalculateTax(income);
 }

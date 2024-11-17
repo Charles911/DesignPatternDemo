@@ -3,9 +3,8 @@ namespace Composite;
 /// <summary>
 /// 简单图形类——线
 /// </summary>
-public class Line : Graphics
+public class Line(string name) : Graphics(name)
 {
-    public Line(string name) : base(name) { }
 
     /// <summary>
     /// 重写父类抽象方法
