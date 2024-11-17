@@ -9,9 +9,6 @@ public class Decorator(Phone p) : Phone
 
     public override void Print()
     {
-        if (phone != null)
-        {
-            phone.Print();
-        }
+        phone?.Print();
     }
 }

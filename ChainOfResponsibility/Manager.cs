@@ -11,9 +11,9 @@ public class Manager(string name) : Approver(name)
         {
             Console.WriteLine($"{this} - {Name} approved the request of purshing {request.ProductName}");
         }
-        else if (NextApprover != null)
+        else
         {
-            NextApprover.ProcessRequest(request);
+            NextApprover?.ProcessRequest(request);
         }
     }
 }
