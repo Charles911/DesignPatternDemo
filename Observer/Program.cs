@@ -21,9 +21,9 @@
 /// 2.当对一个对象的改变需要同时改变其他对象，而又不知道具体有多少对象有待改变的情况下。
 /// 3.当一个对象必须通知其他对象，而又不能假定其他对象是谁的情况下。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         TenXun tenXun = new TenXunGame("TenXun Game", "Have a new game published ....");
 

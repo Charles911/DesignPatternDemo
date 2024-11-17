@@ -6,8 +6,8 @@ namespace Iterator;
 public class ConcreteIterator : Iterator
 {
     //迭代器要集合对象进行遍历操作，自然就需要引用集合对象
-    ConcreteList _list;
-    int _index;
+    private readonly ConcreteList _list;
+    private int _index;
 
     public ConcreteIterator(ConcreteList list)
     {

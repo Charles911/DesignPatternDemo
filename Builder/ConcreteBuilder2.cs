@@ -6,7 +6,7 @@ namespace Builder;
 /// </summary>
 public class ConcreteBuilder2 : IBuilder
 {
-    Computer computer = new Computer();
+    private readonly Computer computer = new Computer();
 
     public void BuildPartCPU() => computer.Add("CPU2");
 

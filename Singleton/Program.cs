@@ -1,7 +1,8 @@
 ﻿namespace Singleton;
-class Program
+
+internal class Program
 {
-    static void Main()
+    private static void Main()
     {
         var s7 = Singleton7.Instance;
         Console.WriteLine(s7.ToString());

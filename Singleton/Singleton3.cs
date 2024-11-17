@@ -9,9 +9,10 @@ namespace Singleton;
 /// </remarks>
 public sealed class Singleton3
 {
-    Singleton3() { }
-    static Singleton3? instance;
-    static readonly object syncObj = new();
+    private Singleton3() { }
+
+    private static Singleton3? instance;
+    private static readonly object syncObj = new();
     public static Singleton3 Instance
     {
         get

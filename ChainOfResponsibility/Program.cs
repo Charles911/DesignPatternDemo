@@ -19,9 +19,9 @@
 /// 1.一个系统的审批需要多个对象才能完成处理的情况下，例如请假系统等。
 /// 2.代码中存在多个if-else语句的情况下，此时可以考虑使用责任链模式来对代码进行重构。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var requestTelphone = new PurchaseRequest(4000.0, "Telphone");
         var requestSoftware = new PurchaseRequest(10000.0, "Visual Studio");

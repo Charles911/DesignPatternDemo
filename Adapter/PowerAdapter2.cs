@@ -7,7 +7,7 @@ namespace Adapter;
 /// </summary>
 public class PowerAdapter2: ThreeHole
 {
-    TwoHole twoHole = new TwoHole();
+    private readonly TwoHole twoHole = new TwoHole();
 
     /// <summary>
     /// 实现三个孔插头接口方法

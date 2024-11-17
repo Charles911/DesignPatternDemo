@@ -10,9 +10,10 @@ public sealed class Singleton1 //该类不能被继承
 {
     //没有标明访问权限的类成员，默认为private
     //无法从外部创建实例
-    Singleton1() { }
+    private Singleton1() { }
+
     //静态后备字段
-    static Singleton1? instance;
+    private static Singleton1? instance;
     //静态属性（与静态后备字段对应）
     public static Singleton1 Instance
     {

@@ -20,9 +20,9 @@
 /// 1.一组定义良好的对象，现在要进行复杂的相互通信。
 /// 2.想通过一个中间类来封装多个类中的行为，而又不想生成太多的子类。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var a = new ParterA();
         var b = new ParterB();

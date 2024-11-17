@@ -13,9 +13,9 @@
 /// 
 /// 附：在.NET中模板方法的应用也很多，例如我们在开发自定义的Web控件或WinForm控件时，只需要重写某个控件的部分方法
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var spinach = new Spinach();
         spinach.CookVegetable();

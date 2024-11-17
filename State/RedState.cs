@@ -36,7 +36,7 @@ public class RedState : State
     /// <param name="amount"></param>
     public override void Withdraw(double amount) => Console.WriteLine("没有钱可以取了！");
 
-    void StateChangeCheck()
+    private void StateChangeCheck()
     {
         if (Balance > UpperLimit)
         {

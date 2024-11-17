@@ -8,6 +8,6 @@ namespace Singleton;
 /// </remarks>
 public sealed class Singleton6
 {
-    Singleton6() { }
+    private Singleton6() { }
     public static readonly Singleton6 Instance = new();
 }

@@ -5,8 +5,8 @@ namespace Facade;
 /// </summary>
 public class RegistrationFacade
 {
-    RegisterCourse registerCourse;
-    NotifyStudent notifyStudent;
+    private readonly RegisterCourse registerCourse;
+    private readonly NotifyStudent notifyStudent;
 
     public RegistrationFacade()
     {

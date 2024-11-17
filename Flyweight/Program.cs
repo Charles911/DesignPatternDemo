@@ -1,4 +1,5 @@
 ﻿namespace Flyweight;
+
 /// <summary>
 /// 享元模式
 /// </summary>
@@ -29,9 +30,9 @@
 /// 
 /// 附：享元模式主要用来解决由于大量的细粒度对象所造成的内存开销的问题，它在实际的开发中并不常用，可以作为底层的提升性能的一种手段
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         //定义外部状态，例如字母的位置等信息
         int extrinsicstate = 10;

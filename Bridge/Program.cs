@@ -20,9 +20,9 @@
 /// 3.需要跨越多个平台的图形和窗口系统上。
 /// 4.一个类存在两个独立变化的维度，且两个维度都需要进行扩展。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         //以电视机遥控器的例子来演示
         //创建一个遥控器

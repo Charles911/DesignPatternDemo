@@ -1,4 +1,5 @@
 ﻿namespace Adapter;
+
 /// <summary>
 /// 适配器模式
 /// </summary>
@@ -29,13 +30,13 @@
 /// 2.想要建立一个可重复使用的类，用于与一些彼此之间没有太大关联的一些类，包括一些可能在将来引进的类一起工作。
 /// 3.对于对象适配器模式，在设计里需要改变多个已有子类的接口，如果使用类的适配器模式，就要针对每一个子类做一个适配器，而这不太实际。
 /// </remarks>
-class Program
+internal class Program
 {
     /// <summary>
     /// 客户端，客户想要把2个孔的插头 转变成三个孔的插头，这个转变交给适配器就好
     /// 既然适配器需要完成这个功能，所以它必须同时具体2个孔插头和三个孔插头的特征
     /// </summary>
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         //类适配模式
         IThreeHole threeHole = new PowerAdapter();

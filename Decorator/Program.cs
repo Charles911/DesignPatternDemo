@@ -18,9 +18,9 @@
 /// 2.需要动态地给一个对象增加功能，这些功能可以再动态地撤销。
 /// 3.需要增加由一些基本功能的排列组合而产生的非常大量的功能
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var phone = new ApplePhone();
 

@@ -46,7 +46,7 @@ public class SilverState : State
         StateChangeCheck();
     }
 
-    void StateChangeCheck()
+    private void StateChangeCheck()
     {
         if (Balance < LowerLimit)
         {

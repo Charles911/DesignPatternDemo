@@ -19,9 +19,9 @@
 /// 2.系统需要支持对聚合对象的多种遍历。
 /// 3.系统需要为不同的聚合结构提供一个统一的接口。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         IListCollection list = new ConcreteList();
         Iterator iterator = list.GetIterator();

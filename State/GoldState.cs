@@ -44,7 +44,7 @@ public class GoldState : State
         StateChangeCheck();
     }
 
-    void StateChangeCheck()
+    private void StateChangeCheck()
     {
         if (Balance < 0.0)
         {

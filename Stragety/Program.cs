@@ -21,9 +21,9 @@
 ///   那么这些算法可以包装到一个个具体的算法类里面，并为这些具体的算法类提供一个统一的接口。
 /// 2.如果一个对象有很多的行为，如果不使用合适的模式，这些行为就只好使用多重的if-else语句来实现，此时，可以使用策略模式，把这些行为转移到相应的具体策略类里面，就可以避免使用难以维护的多重条件选择语句，并体现面向对象涉及的概念。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         //个人所得税
         InterestOperation operation = new(new PersonalTaxStrategy());

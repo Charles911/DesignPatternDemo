@@ -25,11 +25,11 @@
 /// 2.提供子系统的独立性
 /// 3.在层次化结构中，可以使用外观模式定义系统中每一层的入口。其中三层架构就是这样的一个例子
 /// </remarks>
-class Program
+internal class Program
 {
-    static RegistrationFacade facade = new RegistrationFacade();
+    private static readonly RegistrationFacade facade = new RegistrationFacade();
 
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         if (facade.RegisterCourse("设计模式", "Learning Hard"))
         {

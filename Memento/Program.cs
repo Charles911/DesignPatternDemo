@@ -18,9 +18,9 @@
 /// 1.如果系统需要提供回滚操作时，使用备忘录模式非常合适。
 ///   例如文本编辑器的Ctrl+Z撤销操作的实现，数据库中事务操作。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var persons = new List<ContactPerson>()
         {

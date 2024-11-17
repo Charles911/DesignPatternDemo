@@ -2,7 +2,7 @@ namespace Stragety;
 
 public class InterestOperation
 {
-    ITaxStragety stragety;
+    private readonly ITaxStragety stragety;
 
     public InterestOperation(ITaxStragety taxStragety) => stragety = taxStragety;
 

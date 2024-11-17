@@ -8,7 +8,7 @@ namespace Singleton;
 /// </remarks>
 public sealed class Singleton5
 {
-    Singleton5() { }
+    private Singleton5() { }
     public static Singleton5 Instance
     {
         //只有真正的用到单例才会执行嵌套类的静态构造函数
@@ -18,7 +18,7 @@ public sealed class Singleton5
     /// <summary>
     /// 私有嵌套类
     /// </summary>
-    class Nested
+    private class Nested
     {
         internal static readonly Singleton5 instance = new();
     }

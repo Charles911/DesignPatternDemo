@@ -18,9 +18,9 @@
 ///   把状态的判断逻辑转移到表示不同状态的一系列类中，可以把复杂的判断逻辑简单化。
 /// 2.当一个对象行为取决于它的状态，并且它需要在运行时刻根据状态改变它的行为时，就可以考虑使用状态者模式。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         //开一个新的账户
         var account = new Account("Learning Hard");

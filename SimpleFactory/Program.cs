@@ -16,9 +16,9 @@
 /// 当工厂类负责创建的对象比较少时可以考虑使用简单工厂模式
 /// 客户如果只知道传入工厂类的参数，对于如何创建对象的逻辑不关心时可以考虑使用简单工厂模式
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var food1 = Kitchen.Create("土豆肉丝");
         var food2 = Kitchen.Create("西红柿炒蛋");

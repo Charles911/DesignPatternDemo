@@ -5,7 +5,7 @@ namespace Decorator;
 /// </summary>
 public class Decorator:Phone
 {
-    Phone phone;
+    private readonly Phone phone;
 
     public Decorator(Phone p) => phone = p;
 

@@ -35,9 +35,9 @@
 /// 4.系统需要使用命令模式作为“CallBack(回调)”在面向对象系统中的替代。
 ///   Callback即是先将一个方法注册上，然后再以后调用该方法。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         //初始化
         var receiver = new Receiver();

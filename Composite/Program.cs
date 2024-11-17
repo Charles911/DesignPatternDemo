@@ -21,9 +21,9 @@
 /// 1.需要表示一个对象整体或部分的层次结构。
 /// 2.希望用户忽略组合对象与单个对象的不同，用户将统一地使用组合结构中的所有对象。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var complexGraphics = new ComplexGraphics("一个复杂图形和两条线段组成的复杂图形");
         complexGraphics.Add(new Line("线段A"));

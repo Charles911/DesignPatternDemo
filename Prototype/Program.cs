@@ -16,9 +16,9 @@
 /// 
 /// 应用场景：
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         //孙悟空 原型
         MonkeyKingPrototype prototypeMonkeyKing = new ConcretePrototype("MonkeyKing");

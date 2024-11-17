@@ -10,9 +10,9 @@
 /// 抽象工厂模式很难支持新种类产品的变化。
 /// 这是因为抽象工厂接口中已经确定了可以被创建的产品集合，如果需要添加新产品，此时就必须去修改抽象工厂的接口，这样就涉及到抽象工厂类的以及所有子类的改变，这样也就违背了“开发——封闭”原则。
 /// </remarks>
-class Program
+internal class Program
 {
-    static void Main(string[] args)
+    private static void Main(string[] args)
     {
         var af1 = new NanjingFactory();
         var af2 = new ShanghaiFactory();

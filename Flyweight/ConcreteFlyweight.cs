@@ -6,7 +6,7 @@ namespace Flyweight;
 public class ConcreteFlyweight : Flyweight
 {
     //内部状态
-    string intrinsicstate;
+    private readonly string intrinsicstate;
 
     /// <summary>
     /// 构造方法

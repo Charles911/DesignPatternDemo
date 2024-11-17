@@ -14,8 +14,9 @@ namespace Singleton;
 /// </remarks>
 public sealed class Singleton4
 {
-    Singleton4() { }
-    static readonly Singleton4 instance = new();
+    private Singleton4() { }
+
+    private static readonly Singleton4 instance = new();
 
     public static Singleton4 Instance
     {
