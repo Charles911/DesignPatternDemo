@@ -24,9 +24,9 @@ internal class Program
     {
         var persons = new List<ContactPerson>()
         {
-            new ContactPerson() { Name = "Learning Hard", MobileNum = "123456"},
-            new ContactPerson() { Name = "Tony", MobileNum = "234567"},
-            new ContactPerson() { Name = "Jock", MobileNum = "345678"}
+            new() { Name = "Learning Hard", MobileNum = "123456"},
+            new() { Name = "Tony", MobileNum = "234567"},
+            new() { Name = "Jock", MobileNum = "345678"}
         };
 
         MobileOwner mobileOwner = new(persons);

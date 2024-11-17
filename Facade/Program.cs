@@ -27,7 +27,7 @@
 /// </remarks>
 internal class Program
 {
-    private static readonly RegistrationFacade facade = new RegistrationFacade();
+    private static readonly RegistrationFacade facade = new();
 
     private static void Main(string[] args)
     {

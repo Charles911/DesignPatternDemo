@@ -5,7 +5,7 @@ namespace Vistor;
 //对象结构
 public class ObjectStructure
 {
-    private readonly ArrayList elements = new ArrayList();
+    private readonly ArrayList elements = new();
 
     public ArrayList Elements { get => elements; }
 

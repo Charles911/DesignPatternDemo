@@ -5,7 +5,7 @@ namespace Composite;
 /// </summary>
 public class ComplexGraphics : Graphics
 {
-    private readonly List<Graphics> complexGraphicses = new List<Graphics>();
+    private readonly List<Graphics> complexGraphicses = new();
 
     public ComplexGraphics(string name) : base(name) { }
 
