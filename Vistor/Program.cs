@@ -34,8 +34,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        ObjectStructure objectStructure = new();
-        foreach (Element e in objectStructure.Elements)
+        foreach (Element e in new ObjectStructure().Elements)
         {
             //每个元素接受访问者访问
             e.Accept(new ConcreteVistor());

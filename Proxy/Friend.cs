@@ -12,10 +12,7 @@ public class Friend : Person
     {
         Console.WriteLine("通过代理类访问真是实体类对象的方法");
 
-        if (realBuyPerson == null)
-        {
-            realBuyPerson = new RealBuyPerson();
-        }
+        realBuyPerson ??= new RealBuyPerson();
 
         PreBuyProduct();
         //调用真实主题方法

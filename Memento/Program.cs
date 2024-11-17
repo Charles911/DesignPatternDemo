@@ -56,7 +56,7 @@ internal class Program
         {
             Console.Write("请输入数字,按窗口的关闭键退出:");
 
-            int index = -1;
+            int index;
             try
             {
                 index = Int32.Parse(Console.ReadLine() ?? "-1");
@@ -67,7 +67,7 @@ internal class Program
                 continue;
             }
 
-            ContactMemento? contactMemento = null;
+            ContactMemento? contactMemento;
             if (index < keyCollection.Count &&
                 caretaker.ContactMementoDic.TryGetValue(keyCollection.ElementAt(index), out contactMemento))
             {
