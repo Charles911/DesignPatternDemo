@@ -5,7 +5,7 @@ namespace Composite;
 /// </summary>
 public class ComplexGraphics(string name) : Graphics(name)
 {
-    private readonly List<Graphics> complexGraphicses = new();
+    private readonly List<Graphics> complexGraphicses = [];
 
     /// <summary>
     /// 复杂图形的画法

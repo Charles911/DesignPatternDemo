@@ -3,7 +3,7 @@ namespace Flyweight;
 public class FlyweightFactory
 {
     //最好使用泛型Dictionary<string, Flyweight>
-    public Dictionary<string, Flyweight> flyweights = new();
+    public Dictionary<string, Flyweight> flyweights = [];
     // public Hashtable flyweights = new Hashtable();
 
     public FlyweightFactory()

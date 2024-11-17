@@ -23,8 +23,7 @@ internal class Program
 {
     private static void Main(string[] args)
     {
-        IListCollection list = new ConcreteList();
-        Iterator iterator = list.GetIterator();
+        Iterator iterator = new ConcreteList().GetIterator();
 
         while (iterator.MoveNext())
         {

@@ -14,7 +14,7 @@ public class MobileOwner(List<ContactPerson> persons)
         //这里也应该传递深拷贝，new List方式传递的是浅拷贝，
         //因为ContactPerson类中都是string类型, 所以这里new list方式对ContactPerson对象执行了深拷贝
         //如果ContactPerson包括非string的引用类型就会有问题，所以这里也应该用序列化传递深拷贝
-        new(new List<ContactPerson>(ContactPersons));
+        new([.. ContactPersons]);
 
     /// <summary>
     /// 将备忘录中的数据备份导入到联系人列表中

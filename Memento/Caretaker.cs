@@ -7,5 +7,5 @@ public class Caretaker
 {
     public Dictionary<string, ContactMemento> ContactMementoDic { get; set; }
 
-    public Caretaker() => ContactMementoDic = new Dictionary<string, ContactMemento>();
+    public Caretaker() => ContactMementoDic = [];
 }

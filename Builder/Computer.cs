@@ -6,7 +6,7 @@ namespace Builder;
 public class Computer
 {
     //电脑组件集合
-    public IList<string> parts = new List<string>();
+    public IList<string> parts = [];
 
     //把单个组件添加到电脑组件集合中
     public void Add(string part) => parts.Add(part);

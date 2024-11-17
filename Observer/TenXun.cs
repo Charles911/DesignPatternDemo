@@ -5,7 +5,7 @@ namespace Observer;
 /// </summary>
 public abstract class TenXun(string symbol, string info)
 {
-    private readonly List<IObserver> observers = new();
+    private readonly List<IObserver> observers = [];
 
     public string Symbol { get; set; } = symbol;
     public string Info { get; set; } = info;
