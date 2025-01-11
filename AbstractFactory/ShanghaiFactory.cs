@@ -2,7 +2,7 @@ namespace AbstractFactory;
 
 public class ShanghaiFactory : AbstractFactory
 {
-    public override Yabo CreateYabo() => new ShanghaiYabo();
+    public override DuckNeck CreateYabo() => new ShanghaiDuckNeck();
 
-    public override Yajia CreateYajia() => new ShanghaiYajia();
+    public override DuckRack CreateYajia() => new ShanghaiDuckRack();
 }

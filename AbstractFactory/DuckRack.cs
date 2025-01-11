@@ -1,6 +1,6 @@
 namespace AbstractFactory;
 
-public abstract class Yajia
+public abstract class DuckRack
 {
     public abstract void Show();
 }

@@ -1,6 +1,6 @@
 namespace AbstractFactory;
 
-public class ShanghaiYajia : Yajia
+public class ShanghaiDuckRack : DuckRack
 {
     public override void Show() => Console.WriteLine("上海鸭架");
 }
