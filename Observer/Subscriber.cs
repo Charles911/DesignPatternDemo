@@ -7,7 +7,7 @@ public class Subscriber(string name) : IObserver
 {
     public string Name { get; set; } = name;
 
-    public void ReceiveAndPrint(TenXun tenXun)
+    public void ReceiveAndPrint(Tencent tenXun)
     {
         Console.WriteLine($"Notified {Name} of {tenXun.Symbol}'s Info is: {tenXun.Info}");
     }

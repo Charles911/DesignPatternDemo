@@ -5,5 +5,5 @@ namespace Observer;
 /// </summary>
 public interface IObserver
 {
-    void ReceiveAndPrint(TenXun tenXun);
+    void ReceiveAndPrint(Tencent tenXun);
 }

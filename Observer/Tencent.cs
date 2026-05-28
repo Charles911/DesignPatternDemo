@@ -3,7 +3,7 @@ namespace Observer;
 /// <summary>
 /// 订阅号抽象类
 /// </summary>
-public abstract class TenXun(string symbol, string info)
+public abstract class Tencent(string symbol, string info)
 {
     private readonly List<IObserver> observers = [];
 
