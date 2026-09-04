@@ -17,37 +17,33 @@
 
 ```mermaid
 classDiagram
-    class AbstractMediator {
-        <<abstract>>
-        #partnerA : AbstractCardPartner
-        #partnerB : AbstractCardPartner
-        +AWin(count: int) void
-        +BWin(count: int) void
+    class ContactPerson {
+        +Name : string
+        +MobileNum : string
     }
 
-    class MediatorPater {
-        +AWin(count: int) void
-        +BWin(count: int) void
+    class MobileOwner {
+        +ContactPersons : List~ContactPerson~
+        +CreateMemento() ContactMemento
+        +RestoreMemento(memento: ContactMemento) void
+        +Show() void
     }
 
-    class AbstractCardPartner {
-        <<abstract>>
-        +MoneyCount : int
-        +ChangeCount(count: int, mediator: AbstractMediator) void
+    class ContactMemento {
+        +ContactPersonBack : List~ContactPerson~
     }
 
-    class ParterA {
-        +ChangeCount(count: int, mediator: AbstractMediator) void
+    class Caretaker {
+        +ContactMementoDic : Dictionary~string, ContactMemento~
     }
 
-    class ParterB {
-        +ChangeCount(count: int, mediator: AbstractMediator) void
-    }
+    class Program
 
-    AbstractMediator <|-- MediatorPater
-    AbstractCardPartner <|-- ParterA
-    AbstractCardPartner <|-- ParterB
+    MobileOwner o-- "0..*" ContactPerson : owns
+    MobileOwner ..> ContactMemento : creates/restores
+    ContactMemento o-- "0..*" ContactPerson : stores
+    Caretaker o-- "0..*" ContactMemento : manages
 
-    MediatorPater o-- AbstractCardPartner : 协调
-    AbstractCardPartner ..> AbstractMediator : 调用
+    Program ..> MobileOwner
+    Program ..> Caretaker
 ```

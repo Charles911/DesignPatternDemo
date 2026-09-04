@@ -14,7 +14,7 @@
 
 **缺点：**
 
-用一个具体的Adapter类对Adaptee和Target进行匹配，当如果想要匹配一个类以及所有它的子类时，类的适配器模式就不能胜任了。
+用一个具体的Adapter类对Adaptee和Target进行匹配，如果想要匹配一个类以及所有它的子类时，类的适配器模式就不能胜任了。
 因为类的适配器模式中没有引入Adaptee的实例，光调用this.SpecificRequest方法并不能去调用它对应子类的SpecificRequest方法。
 采用了 “多继承”的实现方式，带来了不良的高耦合。
 
