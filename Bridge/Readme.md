@@ -6,7 +6,7 @@
 
 1.  把抽象接口与其实现解耦。
 2.  抽象和实现可以独立扩展，不会影响到对方。
-3.  实现细节对客户透明，对用于隐藏了具体实现细节。
+3.  实现细节对客户透明，用于隐藏了具体实现细节。
 
 **缺点：**
 
@@ -18,3 +18,42 @@
 2.  设计要求实现化角色的任何改变不应当影响客户端，或者实现化角色的改变对客户端是完全透明的。
 3.  需要跨越多个平台的图形和窗口系统上。
 4.  一个类存在两个独立变化的维度，且两个维度都需要进行扩展。
+
+```mermaid
+classDiagram
+    direction LR
+
+    class TV {
+        <<abstract>>
+        +On()
+        +Off()
+        +TuneChannel()
+    }
+
+    class ChangHong
+    class Samsung
+
+    class RemoteControl {
+        +Implementor: TV
+        +On()
+        +Off()
+        +SetChannel()
+    }
+
+    class ConcreteRemote {
+        +SetChannel()
+    }
+
+    class Program
+
+    TV <|-- ChangHong
+    TV <|-- Samsung
+
+    RemoteControl <|-- ConcreteRemote
+    RemoteControl --> TV : has a
+
+    Program ..> RemoteControl
+    Program ..> ConcreteRemote
+    Program ..> ChangHong
+    Program ..> Samsung
+```

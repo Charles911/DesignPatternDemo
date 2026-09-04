@@ -14,3 +14,40 @@
 **应用场景：**
 
 1. 如果系统需要提供回滚操作时，使用备忘录模式非常合适。例如文本编辑器的Ctrl+Z撤销操作的实现，数据库中事务操作。
+
+```mermaid
+classDiagram
+    class AbstractMediator {
+        <<abstract>>
+        #partnerA : AbstractCardPartner
+        #partnerB : AbstractCardPartner
+        +AWin(count: int) void
+        +BWin(count: int) void
+    }
+
+    class MediatorPater {
+        +AWin(count: int) void
+        +BWin(count: int) void
+    }
+
+    class AbstractCardPartner {
+        <<abstract>>
+        +MoneyCount : int
+        +ChangeCount(count: int, mediator: AbstractMediator) void
+    }
+
+    class ParterA {
+        +ChangeCount(count: int, mediator: AbstractMediator) void
+    }
+
+    class ParterB {
+        +ChangeCount(count: int, mediator: AbstractMediator) void
+    }
+
+    AbstractMediator <|-- MediatorPater
+    AbstractCardPartner <|-- ParterA
+    AbstractCardPartner <|-- ParterB
+
+    MediatorPater o-- AbstractCardPartner : 协调
+    AbstractCardPartner ..> AbstractMediator : 调用
+```

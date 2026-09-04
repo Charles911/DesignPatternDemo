@@ -15,3 +15,31 @@
  2. 实现代理类也需要额外的工作，从而增加了系统的实现复杂度。
 
  **附：** 在实际开发过程中，我们在客户端添加服务引用的时候，在客户程序中会添加一些额外的类，在客户端生成的类扮演着代理主题角色，我们客户端也是直接调用这些代理角色来访问远程服务提供的操作。这个是远程代理的一个典型例子。
+
+```mermaid
+classDiagram
+    class Person {
+        <<abstract>>
+        +BuyProduct() void
+    }
+
+    class Friend {
+        -realBuyPerson : RealBuyPerson
+        +BuyProduct() void
+        -PreBuyProduct() void
+        -PostBuyProduct() void
+    }
+
+    class RealBuyPerson {
+        +BuyProduct() void
+    }
+
+    class Program {
+        +Main() void
+    }
+
+    Person <|-- Friend
+    Person <|-- RealBuyPerson
+    Friend o-- RealBuyPerson : 代理并控制访问
+    Program ..> Person : 调用
+```

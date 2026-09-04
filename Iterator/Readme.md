@@ -16,3 +16,44 @@
 1. 系统需要访问一个聚合对象的内容而无需暴露它的内部表示。
 2. 系统需要支持对聚合对象的多种遍历。
 3. 系统需要为不同的聚合结构提供一个统一的接口。
+
+```mermaid
+classDiagram
+    class Program
+
+    class Iterator {
+        <<interface>>
+        +MoveNext() bool
+        +GetCurrent() object
+        +Next() void
+        +Reset() void
+    }
+
+    class IListCollection {
+        <<interface>>
+        +GetIterator() Iterator
+    }
+
+    class ConcreteIterator {
+        -_list : ConcreteList
+        -_index : int
+        +MoveNext() bool
+        +GetCurrent() object
+        +Next() void
+        +Reset() void
+    }
+
+    class ConcreteList {
+        -collection : int[]
+        +Length : int
+        +ConcreteList()
+        +GetIterator() Iterator
+        +GetElement(index: int) int
+    }
+
+    Program ..> ConcreteList
+    ConcreteList ..|> IListCollection
+    ConcreteIterator ..|> Iterator
+    ConcreteList --> ConcreteIterator
+    ConcreteIterator --> ConcreteList
+```

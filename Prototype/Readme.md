@@ -13,3 +13,26 @@
 2. 配备克隆方法需要对类的功能进行通盘考虑，这对于全新的类不是很难，但对于已有的类不一定很容易，特别当一个类引用不支持串行化的间接对象，或者引用含有循环结构的时候。
 
 **应用场景：**
+
+```mermaid
+classDiagram
+    class MonkeyKingPrototype {
+        <<abstract>>
+        +Id : string
+        +Clone() MonkeyKingPrototype
+    }
+
+    class ConcretePrototype {
+        +ConcretePrototype(id: string)
+        +Clone() MonkeyKingPrototype
+    }
+
+    class Program {
+        +Main() void
+    }
+
+    MonkeyKingPrototype <|-- ConcretePrototype
+    ConcretePrototype ..> ConcretePrototype : 浅拷贝
+    Program ..> MonkeyKingPrototype : 使用原型
+    Program ..> ConcretePrototype : 创建与克隆
+```

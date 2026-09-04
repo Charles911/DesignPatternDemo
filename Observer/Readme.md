@@ -19,3 +19,40 @@
 1. 当一个抽象模型有两个方面，其中一个方面依赖于另一个方面，将这两者封装在独立的对象中以使它们可以各自独立地改变和复用的情况下。
 2. 当对一个对象的改变需要同时改变其他对象，而又不知道具体有多少对象有待改变的情况下。
 3. 当一个对象必须通知其他对象，而又不能假定其他对象是谁的情况下。
+
+```mermaid
+classDiagram
+    class IObserver {
+        <<interface>>
+        +ReceiveAndPrint(tenXun: Tencent) void
+    }
+
+    class Subscriber {
+        +Name : string
+        +ReceiveAndPrint(tenXun: Tencent) void
+    }
+
+    class Tencent {
+        <<abstract>>
+        -observers : List~IObserver~
+        +Symbol : string
+        +Info : string
+        +AddObserver(observer: IObserver) void
+        +RemoveObserver(observer: IObserver) void
+        +Update() void
+    }
+
+    class TencentGame {
+    }
+
+    class Program {
+        +Main() void
+    }
+
+    IObserver <|.. Subscriber
+    Tencent <|-- TencentGame
+    Tencent o-- IObserver : 通知
+    Subscriber ..> Tencent : 接收通知
+    Program ..> TencentGame : 创建
+    Program ..> Subscriber : 注册
+```

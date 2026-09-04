@@ -17,3 +17,38 @@
 1. 需要扩展一个类的功能或给一个类增加附加责任。
 2. 需要动态地给一个对象增加功能，这些功能可以再动态地撤销。
 3. 需要增加由一些基本功能的排列组合而产生的非常大量的功能
+
+```mermaid
+classDiagram
+    direction LR
+
+    class Phone {
+        <<abstract>>
+        +Print()
+    }
+
+    class ApplePhone
+
+    class Decorator {
+        -phone: Phone
+        +Print()
+    }
+
+    class Sticker
+    class Accessories
+
+    class Program
+
+    Phone <|-- ApplePhone
+    Phone <|-- Decorator
+
+    Decorator <|-- Sticker
+    Decorator <|-- Accessories
+
+    Decorator --> Phone : 包装
+
+    Program ..> Phone
+    Program ..> ApplePhone
+    Program ..> Sticker
+    Program ..> Accessories
+```

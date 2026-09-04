@@ -27,3 +27,29 @@
 1. 外一个复杂的子系统提供一个简单的接口
 2. 提供子系统的独立性
 3. 在层次化结构中，可以使用外观模式定义系统中每一层的入口。其中三层架构就是这样的一个例子
+
+```mermaid
+classDiagram
+    class Program {
+        +Main(args: string[]) : void
+    }
+
+    class RegistrationFacade {
+        - registerCourse : RegisterCourse
+        - notifyStudent : NotifyStudent
+        + RegistrationFacade()
+        + RegisterCourse(courseName: string, studentName: string) : bool
+    }
+
+    class RegisterCourse {
+        + CheckAvailable(courseName: string) : bool
+    }
+
+    class NotifyStudent {
+        + Notify(studentName: string) : bool
+    }
+
+    Program ..> RegistrationFacade : 调用
+    RegistrationFacade o-- RegisterCourse : 组合
+    RegistrationFacade o-- NotifyStudent : 组合
+```

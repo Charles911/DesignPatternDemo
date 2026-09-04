@@ -6,3 +6,42 @@
 
 建造者模式（Builder Pattern）:将一个复杂对象的构建与它的表示分离，使得同样的构建过程可以创建不同的表示。
 建造者模式使得建造代码与表示代码的分离，可以使客户端不必知道产品内部组成的细节，从而降低了客户端与具体产品之间的耦合度。
+
+```mermaid
+classDiagram
+    direction LR
+
+    class IBuilder {
+        <<interface>>
+        +BuildPartCPU()
+        +BuildPartMainBoard()
+        +GetComputer() Computer
+    }
+
+    class ConcreteBuilder1
+    class ConcreteBuilder2
+
+    class Director {
+        +Construct(IBuilder)
+    }
+
+    class Computer {
+        +parts: IList<string>
+        +Add(part: string)
+        +Show()
+    }
+
+    class Program
+
+    IBuilder <|.. ConcreteBuilder1
+    IBuilder <|.. ConcreteBuilder2
+
+    Director --> IBuilder : invokes
+
+    ConcreteBuilder1 ..> Computer : creates
+    ConcreteBuilder2 ..> Computer : creates
+
+    Program ..> Director
+    Program ..> ConcreteBuilder1
+    Program ..> ConcreteBuilder2
+```

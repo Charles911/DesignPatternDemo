@@ -17,3 +17,37 @@
 
 1. 一个系统的审批需要多个对象才能完成处理的情况下，例如请假系统等。
 2. 代码中存在多个if-else语句的情况下，此时可以考虑使用责任链模式来对代码进行重构。
+
+```mermaid
+classDiagram
+    direction LR
+
+    class PurchaseRequest {
+        +Amount: double
+        +ProductName: string
+    }
+
+    class Approver {
+        <<abstract>>
+        +Name: string
+        +NextApprover: Approver?
+        +ProcessRequest(request: PurchaseRequest)
+    }
+
+    class Manager
+    class VicePresident
+    class President
+
+    class Program
+
+    Approver <|-- Manager
+    Approver <|-- VicePresident
+    Approver <|-- President
+
+    Approver --> Approver : NextApprover
+    Program ..> PurchaseRequest
+    Program ..> Approver
+    Program ..> Manager
+    Program ..> VicePresident
+    Program ..> President
+```

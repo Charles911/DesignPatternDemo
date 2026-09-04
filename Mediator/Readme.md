@@ -18,3 +18,41 @@
 
 1. 一组定义良好的对象，现在要进行复杂的相互通信。
 2. 想通过一个中间类来封装多个类中的行为，而又不想生成太多的子类。
+
+```mermaid
+classDiagram
+    class AbstractMediator {
+        <<abstract>>
+        #partnerA : AbstractCardPartner
+        #partnerB : AbstractCardPartner
+        +AWin(count: int) void
+        +BWin(count: int) void
+    }
+
+    class MediatorPater {
+        +MediatorPater(a: AbstractCardPartner, b: AbstractCardPartner)
+        +AWin(count: int) void
+        +BWin(count: int) void
+    }
+
+    class AbstractCardPartner {
+        <<abstract>>
+        +MoneyCount : int
+        +ChangeCount(count: int, mediator: AbstractMediator) void
+    }
+
+    class ParterA {
+        +ChangeCount(count: int, mediator: AbstractMediator) void
+    }
+
+    class ParterB {
+        +ChangeCount(count: int, mediator: AbstractMediator) void
+    }
+
+    AbstractMediator <|-- MediatorPater
+    AbstractCardPartner <|-- ParterA
+    AbstractCardPartner <|-- ParterB
+
+    MediatorPater o-- AbstractCardPartner : 管理
+    AbstractCardPartner ..> AbstractMediator : 调用
+```

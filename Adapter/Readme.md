@@ -34,3 +34,40 @@
 1. 系统需要复用现有类，而该类的接口不符合系统的需求
 2. 想要建立一个可重复使用的类，用于与一些彼此之间没有太大关联的一些类，包括一些可能在将来引进的类一起工作。
 3. 对于对象适配器模式，在设计里需要改变多个已有子类的接口，如果使用类的适配器模式，就要针对每一个子类做一个适配器，而这不太实际。
+
+```mermaid
+classDiagram
+    direction LR
+
+    class IThreeHole {
+        +Request()
+    }
+
+    class ThreeHole {
+        +Request()
+    }
+
+    class TwoHole {
+        +SpecificRequest()
+    }
+
+    class PowerAdapter {
+        +Request()
+    }
+
+    class PowerAdapter2 {
+        -twoHole: TwoHole
+        +Request()
+    }
+
+    class Program
+
+    IThreeHole <|.. PowerAdapter
+    TwoHole <|-- PowerAdapter
+    ThreeHole <|-- PowerAdapter2
+
+    PowerAdapter2 --> TwoHole : composition
+
+    Program ..> PowerAdapter
+    Program ..> PowerAdapter2
+```

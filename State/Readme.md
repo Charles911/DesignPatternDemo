@@ -15,3 +15,66 @@
 
 1. 当一个对象状态转换的条件表达式过于复杂时可以使用状态者模式。把状态的判断逻辑转移到表示不同状态的一系列类中，可以把复杂的判断逻辑简单化。
 2. 当一个对象行为取决于它的状态，并且它需要在运行时刻根据状态改变它的行为时，就可以考虑使用状态者模式。
+
+```mermaid
+classDiagram
+    class Account {
+        +Owner : string
+        +State : State
+        +Balance : double
+        +Deposit(amount: double) void
+        +Withdraw(amount: double) void
+        +PayInterest() void
+    }
+
+    class State {
+        <<abstract>>
+        +Account : Account
+        +Balance : double
+        +Interest : double
+        +LowerLimit : double
+        +UpperLimit : double
+        +Deposit(amount: double) void
+        +Withdraw(amount: double) void
+        +PayInterest() void
+    }
+
+    class SilverState {
+        +SilverState(balance: double, account: Account)
+        +Deposit(amount: double) void
+        +Withdraw(amount: double) void
+        +PayInterest() void
+    }
+
+    class GoldState {
+        +GoldState(state: State)
+        +Deposit(amount: double) void
+        +Withdraw(amount: double) void
+        +PayInterest() void
+    }
+
+    class RedState {
+        +RedState(state: State)
+        +Deposit(amount: double) void
+        +Withdraw(amount: double) void
+        +PayInterest() void
+    }
+
+    class Program {
+        +Main() void
+    }
+
+    State <|-- SilverState
+    State <|-- GoldState
+    State <|-- RedState
+
+    Account o-- State : 持有当前状态
+    State --> Account : 状态切换
+    Program ..> Account : 使用
+
+    SilverState ..> GoldState : 余额超过上限
+    SilverState ..> RedState : 余额低于下限
+    GoldState ..> SilverState : 余额低于下限
+    GoldState ..> RedState : 余额小于零
+    RedState ..> SilverState : 余额恢复
+```

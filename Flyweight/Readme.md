@@ -30,3 +30,31 @@
 但是使用享元模式需要额外维护一个记录子系统已有的所有享元的表，而这也需要耗费资源，所以，应当在有足够多的享元实例可共享时才值得使用享元模式。
 
 **附**：享元模式主要用来解决由于大量的细粒度对象所造成的内存开销的问题，它在实际的开发中并不常用，可以作为底层的提升性能的一种手段
+
+```mermaid
+classDiagram
+    class Program {
+        +Main(args: string[]) : void
+    }
+
+    class FlyweightFactory {
+        + flyweights : Dictionary<string, Flyweight>
+        + FlyweightFactory()
+        + GetFlyweight(key: string) : Flyweight
+    }
+
+    class Flyweight {
+        <<abstract>>
+        + Operation(extrinsicstate: int) : void
+    }
+
+    class ConcreteFlyweight {
+        - intrinsicstate : string
+        + ConcreteFlyweight(innerState: string)
+        + Operation(extrinsicstate: int) : void
+    }
+
+    Program ..> FlyweightFactory : 调用
+    FlyweightFactory --> Flyweight : 维护/返回
+    Flyweight <|-- ConcreteFlyweight : 继承
+```
